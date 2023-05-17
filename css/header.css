@@ -1,0 +1,101 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+}
+.header__logo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.logo__img{
+    width: 100px;
+    height: 50px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+ul, ol{
+    list-style-type: none;
+}
+.item__sudmenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+}
+.list__item:hover > .item__sudmenu{
+    display: block;
+}
+.submenu__item{
+    position: relative;
+}
+.item__enlace{
+    color: #dcd8d8b5;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Sigmar', cursive;
+    display: block;
+    width: 120px;
+}
+span{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.item__enlace:hover{
+    animation-name: rotar;
+    animation-duration: 1s;
+    animation-timeline: 3s;
+}
+@keyframes rotar{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    20%{
+        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+}
+    40% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+    80%{
+        transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+}
+    100%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+}
+.active{
+    color: white;
+    border-bottom: 1px solid #ffff;
+}
+.item__enlace:hover{
+    color: #ffff;
+}
